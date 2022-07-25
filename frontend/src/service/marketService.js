@@ -7,7 +7,7 @@ export const marketService = {
       return res.data
     } catch (err) {
       console.error(`getItemList error: ${err}`);
-      throw err;
+      return {list: []}
     }
 
   }

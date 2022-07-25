@@ -1,29 +1,36 @@
 .header {
   min-height: 60px;
   background-color: bisque;
-  position:relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
+  position: fixed;
+  width: 100%;
 }
 
 .link {
   display: flex;
   align-items: center;
+  position:relative;
 }
 
-.home_icon {
+.icon {
   width: 2em;
   height: 2em;
-  position:absolute;
-  left: 1em;
   cursor: pointer;
 }
 
-.cart_icon {
-  width: 2em;
-  height: 2em;
+.cart_count {
   position:absolute;
-  right: 1em;
-  cursor: pointer;
+  right: -8px;
+  top: -8px;
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

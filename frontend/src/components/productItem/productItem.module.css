@@ -1,0 +1,46 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+.img_box {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.img_box img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 0.8rem;
+}
+
+.button {
+  position:absolute;
+  right:10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button img {
+  width: 1.5em;
+}

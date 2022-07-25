@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import ProductItem from "../../components/productItem/productItem";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllItems} from "../../store/actions/marketAction";
-
+import styles from './home.module.css'
 
 
 const Home = () => {
@@ -15,13 +15,11 @@ const Home = () => {
   }, [dispatch])
 
   return (
-    <main>
-      <ul>
+      <ul className={styles.list}>
         {market.map((item) =>
           <ProductItem item={item}  key={item.id}/>
         )}
       </ul>
-    </main>
   );
 };
 

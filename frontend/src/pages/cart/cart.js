@@ -1,16 +1,17 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import CartItem from "../../components/cartList/cartItem";
+import styles from './cart.module.css'
+import ProductItem from "../../components/productItem/productItem";
 
 const Cart = () => {
   const cart = useSelector(store => store.cart);
 
   return (
-    <ul>
+      <ul className={styles.list}>
       {cart.map((item) =>
-        <CartItem item={item}/>
+        <ProductItem item={item} key={item.timestamp}/>
       )}
-    </ul>
+      </ul>
   );
 };
 

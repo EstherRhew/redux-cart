@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import productListData from '../../assets/data/productList.json'
+// import productListData from '../../assets/data/productList.json'
 import ProductItem from "../../components/productItem/productItem";
 
 
 
 const Home = () => {
-  const {productList} = productListData
+  // const {productList} = productListData
 
   return (
     <main>

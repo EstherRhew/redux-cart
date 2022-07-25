@@ -1,9 +1,10 @@
 import API from "./api";
 
 export const marketService = {
-  getItemList: () => {
+  getItemList: async () => {
     try {
-      const res = API.get("/getItemList")
+      const res = await API.get("/getItemList")
+      console.log(res.data)
       return res.data
     } catch (err) {
       console.error(`getItemList error: ${err}`);

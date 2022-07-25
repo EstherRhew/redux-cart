@@ -1,5 +1,6 @@
 import {combineReducers} from "redux";
-import {cartReducer, marketReducer} from "./cartReducer";
+import {cartReducer} from "./cartReducer";
+import {marketReducer} from "./marketReducer";
 
 export default combineReducers({
   cart: cartReducer,

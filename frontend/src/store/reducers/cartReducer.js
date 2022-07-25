@@ -1,4 +1,4 @@
-import {GET_ALL_ITEMS, ADD_ITEM, DELETE_ITEM} from "../constants/marketConstant";
+import {ADD_ITEM, DELETE_ITEM} from "../constants/cartConstant";
 
 export const cartReducer = (state = [], action) => {
   switch (action.type) {
@@ -12,11 +12,3 @@ export const cartReducer = (state = [], action) => {
   }
 }
 
-export const marketReducer = (state = [], action) => {
-  switch (action.type) {
-    case GET_ALL_ITEMS:
-      return [...state, action.payload];
-    default:
-      return state;
-  }
-}

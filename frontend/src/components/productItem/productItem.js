@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch} from "react-redux";
-import {addCart} from "../../store/actions/marketAction";
+import {addCart} from "../../store/actions/cartAction";
 
 const ProductItem = ({item}) => {
   const dispatch = useDispatch();

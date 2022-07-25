@@ -1,6 +1,7 @@
 const express = require("express");
 const { config } = require("dotenv");
 const database = require("./config/database");
+const cors = require("cors");
 
 const app = express();
 
@@ -8,6 +9,9 @@ config();
 
 database();
 
+app.use(cors({
+  exposedHeaders: ['Authorization'],
+}));
 app.use(express.json());
 
 app.use("/api/market", require("./routes/marketRoute"));

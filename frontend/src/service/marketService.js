@@ -1,4 +1,5 @@
 import API from "./api";
+import data from '../assets/data/productList.json'
 
 export const marketService = {
   getItemList: async () => {
@@ -7,7 +8,7 @@ export const marketService = {
       return res.data
     } catch (err) {
       console.error(`getItemList error: ${err}`);
-      return {list: []}
+      return {list: data.productList}
     }
 
   }
